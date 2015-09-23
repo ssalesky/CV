@@ -4,15 +4,12 @@
 \usepackage[T1]{fontenc}
 \usepackage[sc,osf]{mathpazo}
 
-% \usepackage{fontspec}
-% \setmainfont{Cormorant}
-
 \usepackage{microtype}
 
 %Hyperref package... clickable doi links
 \usepackage[usenames,hyperref]{xcolor}
 \definecolor{mediumblue}{rgb}{0.0,0.0,0.8}
-\usepackage[colorlinks=true,urlcolor=mediumblue]{hyperref}
+\usepackage[colorlinks=true,urlcolor=mediumblue,linkcolor=black]{hyperref}
 
 %Finer control of margins and page geometry
 \usepackage{geometry}
@@ -41,16 +38,13 @@
 %Page numbering ----------------------------------
 \pagestyle{empty}           %No auto page numbers
 %Include page numbers?
-\input{page_numbers.tex}
-\ifdefined\includepagenumbers
-    \pagestyle{fancy}
-    \fancyfoot{}                        %Clear foter
-    \fancyhead{}                        %No header
-    \setcounter{page}{2}
-    \lfoot{\small S. T. Salesky }   %My name in header
-    \rfoot{\small \thepage\ of 8}   %My name in header
-    \renewcommand{\headrulewidth}{0pt}
-\fi
+\pagestyle{fancy}
+\fancyfoot{}                        %Clear foter
+\fancyhead{}                        %No header
+% \setcounter{page}{2}
+\lfoot{\small S. T. Salesky }   %My name in header
+\rfoot{\small \thepage\ of \pageref{LastPage}}   %My name in header
+\renewcommand{\headrulewidth}{0pt}
 %-------------------------------------------------
 
 % ---------------------------------------------
