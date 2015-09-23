@@ -1,0 +1,240 @@
+\documentclass[11pt,letterpaper]{article}
+
+%Use Palantino font
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% \usepackage{fontspec}
+% \setmainfont{Cormorant}
+
+\usepackage{microtype}
+
+%Hyperref package... clickable doi links
+\usepackage[usenames,hyperref]{xcolor}
+\definecolor{mediumblue}{rgb}{0.0,0.0,0.8}
+\usepackage[colorlinks=true,urlcolor=mediumblue]{hyperref}
+
+%Finer control of margins and page geometry
+\usepackage{geometry}
+\geometry{paper=letterpaper,lmargin=1in,rmargin=1in,tmargin=1in,bmargin=1in}
+\geometry{headheight=\baselineskip}
+
+% %Header...
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+%Use less space before and after section titles
+\usepackage[]{titlesec}
+\titlespacing*{\subsection}{0pt}{0.3\baselineskip}{0.\baselineskip}
+\titlespacing*{\section}{0pt}{0.3\baselineskip}{0.\baselineskip}
+%Format section titles to include a horizontal bar
+\titleformat{\section}{\normalfont\Large}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+%Configure spacing...
+\setlength{\parindent}{0pt}                 %Don't indent paragraphs
+\setlength{\parskip}{0.4\baselineskip}      %Spacing after paragraphs
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Page numbering ----------------------------------
+\pagestyle{empty}           %No auto page numbers
+%Include page numbers?
+\input{page_numbers.tex}
+\ifdefined\includepagenumbers
+    \pagestyle{fancy}
+    \fancyfoot{}                        %Clear foter
+    \fancyhead{}                        %No header
+    \setcounter{page}{2}
+    \lfoot{\small S. T. Salesky }   %My name in header
+    \rfoot{\small \thepage\ of 8}   %My name in header
+    \renewcommand{\headrulewidth}{0pt}
+\fi
+%-------------------------------------------------
+
+% ---------------------------------------------
+% CV To Do:
+% ---------------------------------------------
+% Number publications?
+% Ordering? Can (or should) awards go higher in order?
+% ---------------------------------------------
+
+%Header with my contact information
+\begin{center}
+    \textbf{\Large Scott T. Salesky} \\
+    Department of Civil Engineering \\
+    The University of British Columbia \\
+    2002 - 6250 Applied Science Lane \\
+    Vancouver, BC V6T 1Z4 Canada \\
+    \begin{tabular}{c c}
+        % Tel: 1-604-822-2637 & Fax: 1-604-822-6901
+        Tel: 1-810-412-8580 & Fax: 1-604-822-6901
+    \end{tabular} \\
+    Email: \texttt{scott.salesky@ubc.ca}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Research Interests} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Civil Version
+Environmental Fluid Mechanics, Watershed Hydrology, Atmospheric Boundary Layer,
+Large Eddy Simulation, Turbulence, Evaporation, Land-Atmosphere Interactions,
+Snow and Sediment Transport, Multiphase Flows
+
+% % Mechanical Version
+% Turbulence, Large Eddy Simulation, Multiphase Flows,
+% Wind Energy, Snow and Sediment Transport, Atmospheric Boundary Layer,
+% Environmental Fluid Mechanics
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l l}
+2014 & \textbf{Ph.D. Meteorology} \\
+      & The Pennsylvania State University, University Park, PA \\
+      & {\small \textbf{Dissertation:}} \textit{\small``Monin-Obukhov similarity and convective organization in the unstable atmospheric}\\
+      & \textit{\small boundary layer''} \\[1.5\parskip]
+
+2010 & \textbf{M.S. Meteorology} \\
+      & The Pennsylvania State University, University Park, PA \\
+      & {\small \textbf{Thesis:}} \textit{\small ``Similarity models of subfilter-scale energy and temperature variance for large eddy simulations} \\
+      & \textit{\small of the atmospheric boundary layer.''} \\[1.5\parskip]
+
+2008 & \textbf{B.S. Science Education}, \textit{Summa Cum Laude} \\
+              & Martin Luther College, New Ulm, MN
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Professional Appointments} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabular}{l l}
+2014--present & \textbf{Postdoctoral Fellow}, Department of Civil Engineering \\
+              & The University of British Columbia \\[1.5\parskip]
+2008--2014 & \textbf{Graduate Research Assistant}, Department of Meteorology \\
+                 & The Pennsylvania State University
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Honors and Awards} 
+% \section*{Honors \& Awards} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l l}
+2014 & \textbf{Penn State Alumni Association Dissertation Award} \\
+     & The Pennsylvania State University \\[1.5\parskip]
+
+2014 & \textbf{John C. Wyngaard Graduate Research Award} \\
+     & Department of Meteorology, The Pennsylvania State University \\
+
+% 2007 & Barbara Klockziem Scholarship \\
+%      & Martin Luther College
+
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Peer-Reviewed Publications} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Banerjee, T., G.G. Katul, \textbf{S.T. Salesky}, and M. Chamecki (2014) Revisiting the formulations for longitudinal velocity variance in the unstable atmospheric surface layer. \textit{Quarterly Journal of the Royal Meteorological Society}, \textbf{141(690)}:1699--1711. [\href{http://doi.org/10.1002/qj.2472}{\textsc{doi}}] 
+
+\textbf{Salesky, S.T.}, G.G. Katul, and M. Chamecki (2013) Buoyancy effects on the integral lengthscales and mean velocity profile in atmospheric surface layer flows. \textit{Physics of Fluids}, \textbf{25},105101. [\href{http://doi.org/10.1063/1.4823747}{\textsc{doi}}]
+
+\textbf{Salesky, S.T.} and M. Chamecki (2012) Random errors in turbulence measurements in the atmospheric surface layer: implications for Monin-Obukhov similarity theory. \textit{Journal of the Atmospheric Sciences}, \textbf{69}(12):3700-3714. [\href{http://doi.org/10.1175/JAS-D-12-096.1}{\textsc{doi}}]
+%, doi:10.1175/JAS-D-12-096.1 
+
+\textbf{Salesky, S.T.} and M. Chamecki  (2012) A similarity model of subfilter-scale energy for large eddy simulations of the atmospheric boundary layer. \textit{Boundary-Layer Meteorology}, \textbf{145}(1):69-91. [\href{http://doi.org/10.1007/s10546-011-9618-0}{\textsc{doi}}]
+%, doi:10.1007/s10546-011-9618-0 
+
+\textbf{Salesky, S.T.}, M. Chamecki, and N.L.Dias (2012) Estimating the random error in eddy-covariance based fluxes and other turbulence statistics: the filtering method. \textit{Boundary-Layer Meteorology}, \textbf{144}(1):113-135. [\href{http://doi.org/10.1007/s10546-012-9710-0}{\textsc{doi}}]
+%, doi:10.1007/s105-012-9710-0 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Manuscripts in Preparation} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Salesky, S.T.}, M. Giometto, M. Chamecki, M. Lehning, and M.B. Parlange (2015) The
+preferential deposition of snow in complex terrain: a large eddy simulation
+study. 
+
+\textbf{Salesky, S.T.}, M. Chamecki, and E. Bou-Zeid (2015) On the nature of the transition
+between roll and cellular organization in the convective boundary layer.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Invited Talks} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Salesky, S.T.}, 2014. Turbulent transport and convective organization in the unstable atmospheric boundary layer. Fluids Laboratory Seminar. University of British Columbia. April 9, 2014. 
+
+\textbf{Salesky, S.T.}, and M. Chamecki, 2011. Deviations from Monin-Obukhov similarity. Department of Meteorology `Frank' Talk. The Pennsylvania State University, October 28, 2011. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Conference Presentations} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Salesky, S.T.}, M. Giometto, M. Chamecki, and M.B. Parlange, 2015. Blowing snow in complex terrain - an LES investigation. International Conference on Model Integration Across Disparate Scales in Complex Turbulent Flow Simulation. State College, PA, June 15--17, 2015. 
+
+Banerjee, T., G.G. Katul, \textbf{S.T. Salesky}, and M. Chamecki, 2014. Logarithmic scaling in the longitudinal velocity variance explained by a spectral budget in a neutral and unstable atmosphere. APS March Meeting, Denver, CO, March 3-7, 2014. 
+
+\textbf{Salesky, S.T.}, G.G. Katul, and M. Chamecki, 2013. Buoyancy effects on the mean velocity profile in atmospheric surface layer flows. 66th Annual Meeting, APS/DFD. Pittsburgh, PA, November 24-26, 2013. 
+
+\textbf{Salesky, S.T.} and M. Chamecki, 2012. Scatter in plots of Monin-Obukhov similarity functions: random errors or missing physics? American Meteorological Society 20th Symposium on Boundary Layers and Turbulence. Boston, MA, July 8-13, 2012. 
+
+Chamecki, M. and \textbf{S.T. Salesky}, 2012. A new approach to estimate random errors in turbulence statistics. American Meteorological Society 20th Symposium on Boundary Layers and Turbulence. Boston, MA, July 8-13, 2012. 
+
+Chamecki, M., and \textbf{S.T. Salesky}, 2011. Spatial locality of turbulent fluxes: toward local flux-gradient relationships in the atmospheric surface layer. Fall Meeting, AGU. San Francisco, CA, December 5-9, 2011. 
+
+\textbf{Salesky, S.T.}, and M. Chamecki, 2011. Spatial locality of turbulent fluxes: the filtering approach. 64th Annual Meeting, APS/DFD. Baltimore, MD, November 20, 2011. 
+
+\textbf{Salesky, S.T}. and M. Chamecki, 2011: A similarity model of subfilter-scale scalar variance for large eddy simulations of the atmospheric boundary layer. 14th Annual Environmental Chemistry Student Symposium. The Pennsylvania State University, April 9, 2011. 
+
+\textbf{Salesky, S.T.} and M. Chamecki, 2010: A local model of the subfilter-scale energy for LES of the atmospheric boundary layer. 19th Symposium on Boundary Layers and Turbulence, Keystone, CO, August 6, 2010. 
+
+\textbf{Salesky, S.T.} and M. Chamecki, 2010: A similarity model of the subfilter-scale energy for LES of the ABL. John C. Wyngaard Symposium, The Pennsylvania State University, June 25, 2010. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Teaching Experience} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{The Pennsylvania State University}
+
+\begin{tabular}{l l}
+Spring, 2014 & Substitute Lecturer, \textit{Atmospheric Dynamics} (6 lectures) \\
+        % & The Pennsylvania State University \\ [1.5\parskip]
+Spring, 2013 & Teaching Assistant, \textit{Application of Computers to Meteorology} \\
+        % & The Pennsylvania State University \\ [1.5\parskip]
+Fall, 2008 & Teaching Assistant, \textit{Introductory Meteorology} \\
+        % & The Pennsylvania State University
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Professional Memberships} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Since 2014: American Geophysical Union \\
+% Since 2010: American Physical Society \\
+% Since 2009: Chi Epsilon Pi \\
+% Since 2006: American Meteorological Society 
+
+American Geophysical Union \\
+American Physical Society \\
+American Meteorological Society 
+
+% Chi Epsilon Pi \\
+% Penn State Alumni Association
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Other Professional Activities} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Reviewer of manuscripts for \textit{Advances in Water Resources}, \textit{Atmospheric Science Letters}, \textit{Boundary-Layer Meteorology}, \textit{Environmental Fluid Mechanics}, \textit{Journal of the Atmospheric Sciences}, \textit{Weather and Forecasting} 
+
+Invited participant to Tutorial School on Fluid Dynamics: Topics in Turbulence. May 2010, Center for Scientific Computation and Mathematical Modeling, University of Maryland, College Park, MD 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Personal} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+United States citizen
+
+%Footer with date last updated
+\bigskip
+% \vspace{-1\parskip}
+{\small Last updated: \today}
+
+\end{document}
